@@ -6,14 +6,14 @@ PODS:
   - CapacitorCordova (8.4.1)
   - CapacitorSplashScreen (8.0.1):
     - Capacitor
-  - CapgoCapacitorUpdater (7.18.8):
+  - CapgoCapacitorUpdater (8.50.1):
     - Alamofire (= 5.10.2)
     - BigInt (= 5.2.0)
     - Capacitor
-    - SSZipArchive (= 2.4.3)
     - Version (= 0.8.0)
-  - SSZipArchive (2.4.3)
+    - ZIPFoundation (~> 0.9)
   - Version (0.8.0)
+  - ZIPFoundation (0.9.20)
 
 DEPENDENCIES:
   - "Capacitor (from `../../../../node_modules/@capacitor/ios`)"
@@ -25,8 +25,8 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - BigInt
-    - SSZipArchive
     - Version
+    - ZIPFoundation
 
 EXTERNAL SOURCES:
   Capacitor:
@@ -44,9 +44,9 @@ SPEC CHECKSUMS:
   Capacitor: 35242afe195b1e53c58ca1b827d1b444c5e6602b
   CapacitorCordova: eebe6bcf807b1b06f3f48237650f96bbcd0eef09
   CapacitorSplashScreen: 4b46c72298db552b3c57ce021ef028b6dc7f1fa7
-  CapgoCapacitorUpdater: a7c6b51454b2c99ed71f1eb0ffc829ae97010ef7
-  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+  CapgoCapacitorUpdater: 212d236be95975d5d83e4154f94032e0b27f6ebb
   Version: de5907f2c5d0f3cf21708db7801d1d5401139486
+  ZIPFoundation: dfd3d681c4053ff7e2f7350bc4e53b5dba3f5351
 
 PODFILE CHECKSUM: 00677af5515ef098348f6809ca9d692b06d18519
 

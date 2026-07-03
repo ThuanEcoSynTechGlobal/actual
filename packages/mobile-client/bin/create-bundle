@@ -15,6 +15,7 @@ capgo bundle zip org.actualbudget \
     --name packages/mobile-client/build/bundle.zip \
     --package-json packages/desktop-client/package.json \
     --path packages/desktop-client/build \
+    --no-code-check \
     --json > packages/mobile-client/build/bundle.json
 
 echo "Created mobile app bundle."
