@@ -26,7 +26,11 @@ const persistedRoots = new Set(['/documents']);
 
 function normalizePath(filepath: string): string {
   const absolute = filepath.startsWith('/') ? filepath : '/' + filepath;
-  return absolute.replace(/\/+$/, '');
+  let end = absolute.length;
+  while (end > 0 && absolute[end - 1] === '/') {
+    end--;
+  }
+  return absolute.slice(0, end);
 }
 
 function isPersistedPath(filepath: string): boolean {
