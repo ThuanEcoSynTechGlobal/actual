@@ -50,8 +50,6 @@ export async function getBudgets() {
   return send('api/get-budgets');
 }
 
-export type { ImportableBudgetType };
-
 /**
  * Import a budget from an exported file — an Actual `.zip` export, or a
  * YNAB4/YNAB5 export. Accepts either a path to the file on the engine's
