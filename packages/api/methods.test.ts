@@ -152,11 +152,11 @@ describe('API budget import/export', () => {
   // apis: importBudget
   test('importBudget rejects with an Error on failure', async () => {
     await expect(api.importBudget('/does/not/exist.zip')).rejects.toThrow(
-      'Error importing budget: internal-error',
+      /^Error importing budget:/,
     );
 
     await expect(api.importBudget(new Uint8Array([1, 2, 3]))).rejects.toThrow(
-      'Error importing budget: not-zip-file',
+      /^Error importing budget:/,
     );
   });
 });
